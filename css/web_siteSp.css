@@ -1,0 +1,373 @@
+@media all and (max-width:1400px){
+  .sns3{
+    padding-right:40px;
+  }
+  .rotating-text {
+    top: 36vh;
+    left: -20%;
+    font-size: 120px;
+  }
+  .message-wrapper{
+    padding-top:14vh;
+    margin-left:-4vw;
+  }
+  .header-text li{
+    height:80px;
+    line-height: 80px;
+  }
+  .header-text li p{
+    font-size: 3.825em;
+  }
+}
+@media all and (max-width:1070px){
+
+  .rotating-text {
+    top: 65vh;
+    left: -24%;
+    font-size: 138px;
+  }
+}
+@media all and (max-width:780px){
+  /*--------------*/
+  /*header-wrapper*/
+  /*--------------*/
+  .header{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    margin:0;
+    padding:0;
+  }
+  .header-wrapper{
+    width:100%;
+    display:block;
+  }
+  .header-left,.header-right{
+    width:100%;
+  }
+  .logo{
+    top:17px;
+    font-size: 1.625em;
+  }
+  nav {
+    display:block;
+    width:100%;
+    padding-top:35vh;
+    padding-left:20vw;
+  }
+  .nav-list {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin:0;
+    padding:0;
+    width:100%;
+
+    display:block;
+    transition: all 0.65s;
+
+    padding-top:18%;
+    padding-left:20%;
+  }
+  .nav-list.menuactive {
+    background:rgba(0,0,0,0.95);
+    z-index:999;
+    height:100vh;
+  }
+  .nav-item {
+    height:40px;
+    line-height: 40px;
+    transition-delay: 0.4s;
+    visibility: hidden;
+  }
+  .nav-link {
+    font-size: 1.05rem;
+    display: block;
+    padding: 0;
+    color:#fff;
+    transform: scale(0);
+    transition: transform 0.65s;
+  }
+  .snsBtns{padding-top: 20px;}
+  /*.snsBTns .nav-item{
+    padding:0 10px;;
+  }*/
+  /*hamburger-menu*/
+  .navBar{
+    position:absolute;
+    top:0;
+    right:17px;
+  }
+  .menuBtn {
+    display:block;
+    width: 30px;
+    height: 18px;
+    position: relative;
+    top:12px;
+    left:0;
+    margin-top:-8px;
+    cursor: pointer;
+    z-index: 1500;
+  }
+  .menuBtn.menuactive span:nth-child(1) {
+    background:#fff;
+  }
+  .menuBtn.menuactive span:nth-child(3) {
+    background: #fff;
+  }
+  .menuBtn:hover span:nth-child(1){top:0%;}
+  .menuBtn:hover span:nth-child(3){top:100%;}
+  .rotating-text {
+    top: 65vh;
+    left: 17%;
+    font-size: 108px;
+  }
+  /*ここまで*/
+  /*---------------*/
+  /*message-wrapper*/
+  /*---------------*/
+  .message-wrapper{
+    padding-top:16vh;
+    margin-left:0vw;
+  }
+  .header-text li{
+    width:100vw;
+    height:75px;
+    line-height: 75px;
+  }
+  .header-text li p{
+    width:100%;
+    font-size: 3.025em;
+  }
+  .header-text li span{
+    font-size: 12px;
+  }
+  .menuBtn.menuactive #message{opacity:0;}
+  /*ここまで*/
+
+  /*--------------*/
+  /*name-animation*/
+  /*--------------*/
+  .animate {
+    width:100%;
+    position:absolute;
+    top: 12vh;
+    left:0;
+    display:block;
+    text-align: center;
+  }
+  .animate span:nth-last-of-type(-n+13){
+    font-size:14px;
+    font-family:'Arapey-Italic';
+    font-weight: 300;
+    padding-top: 10px;
+  }
+  .animate span:nth-of-type(-n+5){
+    font-size:30px;
+    font-family: 'NotoSansJP-Regular',sans-serif;
+    font-weight: 400;
+  }
+  .animate span {
+    display: inline-block;
+    animation-delay: .0s;
+  }
+  .animate span {
+    opacity:0;
+    color:#fff;
+  }
+  .animate span.menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s forwards ease-out;
+  }
+  .animate span:nth-of-type(2).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.05s forwards ease-out;
+  }
+  .animate span:nth-of-type(3).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.10s forwards ease-out;
+  }
+  .animate span:nth-of-type(4).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.15s forwards ease-out;
+  }
+  .animate span:nth-of-type(5).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.20s forwards ease-out;
+  }
+  .animate span:nth-of-type(6).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.25s forwards ease-out;
+  }
+  .animate span:nth-of-type(7).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.30s forwards ease-out;
+  }
+  .animate span:nth-of-type(8).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.35s forwards ease-out;
+  }
+  .animate span:nth-of-type(9).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.40s forwards ease-out;
+  }
+  .animate span:nth-of-type(10).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.45s forwards ease-out;
+  }
+  .animate span:nth-of-type(11).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.50s forwards ease-out;
+  }
+  .animate span:nth-of-type(12).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.55s forwards ease-out;
+  }
+  .animate span:nth-of-type(13).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.60s forwards ease-out;
+  }
+  .animate span:nth-of-type(14).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.65s forwards ease-out;
+  }
+  .animate span:nth-of-type(15).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.70s forwards ease-out;
+  }
+  .animate span:nth-of-type(16).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.75s forwards ease-out;
+  }
+  .animate span:nth-of-type(17).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.80s forwards ease-out;
+  }
+  .animate span:nth-of-type(18).menuactive {
+    opacity:1;
+    transform: translate(0, -100px) rotate(360deg) scale(0);
+    animation: dropVanish 0.5s 0.85s forwards ease-out;
+  }
+  @keyframes dropVanish {
+    30% {
+      transform: translate(0, -50px) rotate(180deg) scale(1);
+    }
+    50% {
+      transform: translate(0, 20px) scale(.8) rotate(0deg);
+      opacity: 1;
+    }
+    80% {
+      transform: translate(-100px, -100px) scale(1.5) rotate(-180deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0) scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  /**/
+}
+@media all and (max-width:701px){
+  .nav-list{
+    padding-top:15%;
+  }
+  .navBar{
+    right:18px;
+  }
+  .menuBtn {
+    margin-top:-11px;
+  }
+  .rotating-text {
+    left: 13%;
+    font-size: 88px;
+  }
+}
+@media all and (max-width:545px){
+  .nav-list {
+    padding-top:57%;
+    padding-left:26%;
+  }
+  .nav-item {
+    height:50px;
+    line-height: 50px;
+  }
+  .sns1,.sns2,.sns3{
+    padding:10px 25px;
+  }
+  .rotating-text {
+    top: 73vh;
+    left: 20%;
+    font-size: 74px;
+  }
+  .wisteria {
+  	padding-left:75px;
+  }
+  .peter-river {
+    padding-left:45px;
+  }
+}
+@media all and (max-width:420px){
+  .rotating-text {
+    top: 73vh;
+    left: 23%;
+    font-size: 59px;
+  }
+  .nav-link{
+    font-size:16px;
+  }
+}
+@media all and (max-width:380px){
+  .logo{font-size: 1.225em;}
+  .header-text li p{font-size: 2.725em;}
+  .header-text li{
+    height:70px;
+    line-height: 70px;
+  }
+  .navBar{top:0;right:20px;}
+  .menuBtn {margin-top:-12px;}
+  .rotating-text {
+    font-size: 54px;
+  }
+}
+@media all and (max-width:330px){
+  .header-text li p{font-size: 2.425em;}
+  .header-text li span{font-size: 10px;}
+  .header-text li{height:65px;line-height: 65px;}
+  .nav-list {padding-left:20%;}
+  .navBar{right:18px;}
+  .rotating-text {left:26%;font-size: 47px;}
+  .message-wrapper{
+    padding-top:14vh;
+    margin-left:-3vw;
+  }
+}
+@media all and (max-width:290px){
+  .header-text li p{font-size: 2.225em;}
+  .nav-list {padding-left:18%;}
+  .navBar{right:16px;}
+  .rotating-text {
+    left:29%;
+    font-size: 43px;
+  }
+}
