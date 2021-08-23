@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background:#fff;
+}
+
+/*************/
+/*本文開始*/
+/*************/
+
+/*******************/
+/*コンタクトフォーム*/
+/*******************/
+#contact-form{width:100%;}
+.contact-container{
+	padding-top:0px;
+	width:100%;
+	display:block;
+	text-align: center;
+}
+.contact-text{
+	display:inline-block;
+	text-align:left;
+	padding-bottom:70px;
+	margin-left:-30px;
+}
+h3{
+	color:#333;
+  padding:10px 0;
+	font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+  font-size:22px;
+	letter-spacing: 0.08em;
+	line-height: 2.3;
+}
+form p{color:#34A9E6;padding:8px 0;}
+input{ width:100%;}
+input,textarea{
+	background:#f8f8f8;
+	border:1px solid rgba(0, 0, 0, 0.075);
+	width:55%;
+  padding:7px;
+  margin:5px 0;
+	font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+  font-size:14px;
+	font-weight:200;
+	letter-spacing: 0.08em;
+	line-height: 2.3;
+}
+.submit{
+	cursor: pointer;
+  width:55%;
+  background:#00ff00;
+  color:#0000ff;
+	border:1px solid rgba(0, 0, 0, 0.075);
+	box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+	transition: all 0.3s;
+}
+.submit:hover{background:#8BC3A3;color:white;}
+#recaptchaResponse{
+
+}
+form{padding-bottom: 150px;}
+
+/*ここまで*/
+/********/
+/*footer*/
+/********/
+footer{
+  width:100%;
+  margin:0 auto;
+}
+.copyright{
+  display:block;
+	font-size: .8em;
+	padding:15px 0;
+  text-align:center;
+  padding:30px 0;
+}
+/*ここまで*/
+
+/***************/
+/*レスポンシブ*/
+/***************/
+@media all and (max-width:1400px){
+	#horizon {top:55vh;}
+	.waviy span{font-size:6.8525rem;}
+}
+@media all and (max-width:1070px){
+	.waviy {top:40vh;}
+	input,textarea,.submit{width:82%;}
+}
+@media screen and (max-width:745px){
+	.waviy {top:45vh;}
+	input,textarea{font-size:12px;}
+}
+@media all and (max-width:720px){
+	.waviy span {font-size: 3.445rem;}
+	.waviy {top:40vh;}
+}
+@media all and (max-width:670px){
+  h2{font-size:22px;}
+  h3{font-size:14px;}
+  p{font-size:12px;}
+}
+@media all and (max-width:545px){
+	.waviy span {font-size: 6.3525rem;}
+}
+@media all and (max-width: 420px) {
+	#horizon {top:45vh;}
+	.waviy span {font-size: 5.985rem;}
+	.waviy h4{font-size:12px;line-height:2.0;}
+	.waviy {top:15vh;}
+	.contact-text{margin-left:0px;}
+	input,textarea,.submit{width:90%;}
+}
+@media all and (max-width:290px){
+  .toggle_btn.btoggle{margin-top:35px;}
+	.waviy span {font-size:5.085rem;}
+}
