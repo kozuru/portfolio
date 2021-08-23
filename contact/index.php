@@ -35,13 +35,13 @@ if (isset($_POST["backbtn"])) {
   <meta name="msvalidate.01" content="90990EA574D939D0491B518CE86C8C88" />
   <title>contact|小水流英昭 Hideaki Kozuru/ポートフォリオ</title>
   <link rel="canonical" href="" />
-  <link rel="stylesheet" type="text/css" href="../../../css/reset-min.css">
-  <link rel="stylesheet" type="text/css" href="../../../css/web_common.css">
-  <link rel="stylesheet" type="text/css" href="../../../css/web_contact.css">
-  <link rel="stylesheet" type="text/css" href="../../../css/web_commonSp.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/web_common.css">
+  <link rel="stylesheet" type="text/css" href="../css/web_contact.css">
+  <link rel="stylesheet" type="text/css" href="../css/web_commonSp.css">
   <link rel="icon" href="../imgs/favicon/favicon-b.png" data-alt="../imgs/favicon/favicon-a.png">
-  <link rel="apple-touch-icon" href="../../../imgs/favicon/apple-touch-icon-180x180.png" sizes="180x180">
-  <link rel="icon" type="image/png" href="../../../imgs/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../imgs/favicon/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="../imgs/favicon/android-chrome-192x192.png" sizes="192x192">
   <!--<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css">-->
 
@@ -139,7 +139,7 @@ if (isset($_POST["backbtn"])) {
 
   <script src="https://kit.fontawesome.com/245704263b.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script src="../../../js/web_common.js"></script>
+  <script src="../js/web_common.js"></script>
   <script>
     $('a')
       .bind('touchstart', function(){
