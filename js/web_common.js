@@ -1,4 +1,3 @@
-
 /*\\\\\\\\\\\\\\\\*/
 /*hamburger menu*/
 /*\\\\\\\\\\\\\\\*/
@@ -49,88 +48,45 @@ elment.addEventListener("click", ()=> {
 })
 
 /*ここまで*/
-/*ーーーーーーーーーー:/
-/*テキストが入れ替わる*/
-/*ーーーーーーーーーー*/
-"use strict";
-let words = document.querySelectorAll(".word");
-words.forEach(word => {
-    let letters = word.textContent.split("");
-    word.textContent = "";
-    letters.forEach(letter => {
-        let span = document.createElement("span");
-        span.textContent = letter;
-        span.className = "letter";
-        word.append(span);
-    });
+
+/*------------------------*/
+/*intersection-observer*/
+/*------------------------*/
+$(function(){
+const target = document.querySelectorAll('.target');
+const targetArray = Array.prototype.slice.call(target);
+const options = {
+  root: null,  //nullでブラウザ画面対照
+  rootMargin: '80px 0px',  //画面の下から0pxの位置をターゲットと交差する位置に指定
+  threshold: 0 };  //指定した要素が画面に0%入るとコールバッイベント発生
+const observer = new IntersectionObserver(callback, options);
+targetArray.forEach(tgt => {
+  observer.observe(tgt);
 });
-let currentWordIndex = 0;
-let maxWordIndex = words.length - 1;
-words[currentWordIndex].style.opacity = "1";
-let rotateText = () => {
-    let currentWord = words[currentWordIndex];
-    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-    // rotate out letters of current word
-    Array.from(currentWord.children).forEach((letter, i) => {
-        setTimeout(() => {
-            letter.className = "letter out";
-        }, i * 80);
-    });
-    // reveal and rotate in letters of next word
-    nextWord.style.opacity = "1";
-    Array.from(nextWord.children).forEach((letter, i) => {
-        letter.className = "letter behind";
-        setTimeout(() => {
-            letter.className = "letter in";
-        }, 340 + i * 80);
-    });
-    currentWordIndex =
-        currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-};
-rotateText();
-setInterval(rotateText, 4000);
-
-/*ここまで*/
-
-/****************/
-/*cursol stoker*/
-/****************/
-  // 「#hide-btn」要素のclickイベントをつくってください
-  //マウスストーカー用のdivを取得
-const storker = document.getElementById('storker');
-
-//aタグにホバー中かどうかの判別フラグ
-let hovFlag = false;
-
-//マウスに追従させる処理 （リンクに吸い付いてる時は除外する）
-document.addEventListener('mousemove', function (e) {
-    if (!hovFlag) {
-    storker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+function callback(entries) {
+  entries.forEach(function (entry, i) {
+    const target = entry.target;
+    if (entry.isIntersecting && !target.classList.contains('is-active')) {
+      const delay = i * 100;
+      setTimeout(function () {
+        target.classList.add('is-active');
+      }, delay);
     }
+  });
+};
 });
-
-//リンクへ吸い付く処理
-const linkElem = document.querySelectorAll('a:not(.no_stick_)');
-for (let i = 0; i < linkElem.length; i++) {
-    //マウスホバー時
-    linkElem[i].addEventListener('mouseover', function (e) {
-        hovFlag = true;
-
-        //マウスストーカーにクラスをつける
-        storker.classList.add('hov_');
-
-        //マウスストーカーの位置をリンクの中心に固定
-        let rect = e.target.getBoundingClientRect();
-        let posX = rect.left + (rect.width / 2);
-        let posY = rect.top + (rect.height / 2);
-
-        storker.style.transform = 'translate(' + posX + 'px, ' + posY + 'px)';
-
-    });
-    //マウスホバー解除時
-    linkElem[i].addEventListener('mouseout', function (e) {
-        hovFlag = false;
-        storker.classList.remove('hov_');
-    });
-}
 /*ここまで*/
+/*******************/
+/*heading-animation*/
+/*******************/
+const CLASSNAME = "-visible";
+const TIMEOUT = 100;
+const $target = $(".heading");
+
+setInterval(() => {
+  $target.addClass(CLASSNAME);
+  setTimeout(() => {
+  }, TIMEOUT);
+}, TIMEOUT * 2);
+/*ここまで*/
+
