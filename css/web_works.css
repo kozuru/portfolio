@@ -9,16 +9,29 @@ body {
   font-size: .9em;
   font-family: "Montserrat";
 }
+/**/
 .heading{
-  width:100%;
-	font-size:2.225em;
-	padding:0 0 25px;
-	margin-top:0px;
-	line-height: 1.0;
+  text-align: center;
+  font-size:2.825em;
+  margin:60px auto 0;
+  line-height: 1.0;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.05em;
+  overflow: hidden;
 }
+.heading span {
+  display: inline-block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.heading.-visible span {transform: translate(0, 0);}
+.heading span:nth-child(2) {transition-delay: 0.04s;}
+.heading span:nth-child(3) {transition-delay: 0.08s;}
+.heading span:nth-child(4) {transition-delay: 0.12s;}
+.heading span:nth-child(5) {transition-delay: 0.16s;}
+.heading span:nth-child(6) {transition-delay: 0.20s;}
+/**/
 #works{
   width:100%;
   padding-bottom: 50px;
@@ -137,17 +150,40 @@ body {
 /*web-service*/
 
 .device{margin-top:50px;width:50%;overflow: hidden;}
-.site-text .site-content{
+/**/
+.site-content{
+  overflow: hidden;
   display:inline-block;
   text-align: left;
   color:#333;
-  padding-top:20px;
+  padding:20px 0 0;
   font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
   font-size:0.875em;
   font-weight: 200;
   line-height: 2.0;
-  letter-spacing: 0.07em;
+  letter-spacing:1px;
 }
+.site-content.is-active{
+  animation: slidein 2s cubic-bezier(.4, 0, .2, 1);
+}
+@keyframes slidein{
+ 0% {opacity: 0;transform: translateX(300px);}
+  32% {opacity: 0;transform: translateX(24px);}
+}
+
+.sub-heading{
+  margin:0 auto;
+  overflow: hidden;
+  font-size:1.425em;
+  padding:0 0 30px;
+  transform: scale(0);
+  transition: all 2s cubic-bezier(.4, 0, .2, 1);
+}
+.sub-heading.is-active{
+  transform: scale(1);
+}
+
+/**/
 .text1 p{padding-right: 70px;}
 .text2 p{padding-left:70px;}
 .site-text a{
