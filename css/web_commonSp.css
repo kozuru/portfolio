@@ -1,4 +1,4 @@
-@media all and (max-width:1400px){
+media all and (max-width:1400px){
   .sns3{padding-right:40px;}
   .header-text li{height:80px;line-height: 80px;}
   .header-text li p{font-size: 3.825em;}
@@ -21,7 +21,7 @@
   /*hamburger-menu*/
   .navBar{position:absolute;top:0;right:17px;}
   .menuBtn {display:block;width: 30px;height: 18px;position: relative;top:0px;left:0;
-    margin-top:30px;cursor: pointer;z-index: 1500;}
+    margin-top:25px;cursor: pointer;z-index: 1500;}
   .menuBtn.menuactive span:nth-child(1) {background:#fff;}
   .menuBtn.menuactive span:nth-child(3) {background: #fff;}
   .menuBtn:hover span:nth-child(1){top:0%;}
@@ -132,7 +132,7 @@
 @media all and (max-width:701px){
   .nav-list{padding-top:15%;}
   .navBar{right:18px;}
-  .menuBtn {margin-top:30px;}
+  .menuBtn {margin-top:25px;}
 }
 @media all and (max-width:545px){
   .logo{top:23px;}
@@ -152,7 +152,7 @@
   .header-text li p{font-size: 2.725em;}
   .header-text li{height:70px;line-height: 70px;}
   .navBar{top:0;right:20px;}
-  .menuBtn {margin-top:30px;}
+  .menuBtn {margin-top:25px;}
 }
 @media all and (max-width:330px){
   .side-btn{display:none;}
@@ -161,7 +161,7 @@
   .header-text li{height:65px;line-height: 65px;}
   .nav-list {padding-left:20%;}
   .navBar{right:18px;}
-  .menuBtn {margin-top:30px;}
+  .menuBtn {margin-top:25px;}
 }
 @media all and (max-width:290px){
   .header-text li p{font-size: 2.225em;}
