@@ -39,8 +39,8 @@ header{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height:80px;
-  line-height:80px;
+  height:60px;
+  line-height:60px;
 }
 .header-left{
   background:rgba(255,255,255,0.6);
@@ -54,7 +54,7 @@ header{
 .menu li{padding:0 20px;}
 .header-right{display: flex;z-index:10;}
 .header-right .contact-form{
-  padding:0 40px;
+  padding:0 20px;
   display:block;
   color:#fff;
   background:#000;
