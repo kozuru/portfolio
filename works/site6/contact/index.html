@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="ワッゼド,ホームページ制作,ウェブサービス" />
+    <meta name="description" content="鹿児島の株式会社ワッゼドは、中小零細企業の味方です。Web制作・自社サイト構築をお手伝いします。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>コーディング|家具サイト・contact</title>
+    <link rel="icon" href="../../../imgs/favicon/favicon-b.png" data-alt="imgs/favicon/favicon-a.png">
+    <link rel="apple-touch-icon" href="../../../imgs/favicon/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="../../../imgs/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="stylesheet" href="../../../css/reset-min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="../../../css/furniture_common-min.css" type="text/css" media="all"/>
+    <meta name="google-site-verification" content="XvPiLm4HHB8latpnyDmiV1HjOLk2YdE1Uh0alHo_Jdw" />
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="../site6/index.html"><img  src="../../../imgs/image/siteimage5/furniturelogo.svg" alt=""/></a><span class="catch">Furniture&nbsp;design</span></h1>
+
+          <input type="checkbox" id="menu-btn-check" name="menu-btn-check"/>
+          <label for="menu-btn-check" class="menuBtn"><span></span><span></span></label>
+          <nav id="menu">
+            <ul>
+              <li><a href="../products/product1.html">products</a></li>
+              <li><a href="../about/index.html">about</a></li>
+              <li><a href="../company/index.html">company</a></li>
+              <li><a href="../contact/index.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="mask"></div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <div class="company-wrapper wrapper">
+          <h1>Company</h1>
+          <p style="color:blue; line-height:2.1;">table記述 </p>
+          <table border="1">
+
+              <tr>
+                <th>社名</th>
+                <td>株式会社ワッゼド</td>
+              </tr>
+              <tr>
+                <th>住所</th>
+                <td>〒892-0821&nbsp;鹿児島市名山町9-15&nbsp;Mark$nbspMeizan204</td>
+              </tr>
+              <tr>
+                <th>設立</th>
+                <td>2013年7月</td>
+              </tr>
+              <tr>
+                <th>従業員数</th>
+                <td>〇名</td>
+              </tr>
+              <tr class="last-item">
+                <th >事業内容</th>
+                <td >
+                  <ul class="sub-item">
+                    <li>家具、インテリアの企画・生産</li>
+                    <li>家具、インテリアの販売</li>
+                    <li>店舗の企画・デザイン・設計</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>
+          <p style="color:blue; line-height:2.1;">dl,dt,dd記述 </p>
+          <dl>
+            <dt>社名</dt>
+            <dd>株式会社ワッゼド</dd>
+            <dt>住所</dt>
+            <dd>〒892-0821$nbsp鹿児島市名山町9-15&nbsp;Mark&nbsp;Meizan204</dd>
+            <dt>設立</dt>
+            <dd>2013年7月</dd>
+            <dt>従業員数</dt>
+            <dd>〇名</dd>
+            <dt class="last-item">事業内容</dt>
+            <dd class="last-item">
+              <ul class="sub-item">
+                <li>家具、インテリアの企画・生産</li>
+                <li>家具、インテリアの販売</li>
+                <li>店舗の企画・デザイン・設計</li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.428605816227!2d130.55692711515246!3d31.59471348134513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5f8fb5f25be1%3A0xa86812ae18dfdb2f!2zbWFya01FSVpBTiDvvIjjg57jg7zjgq_jg6HjgqTjgrbjg7PvvIk!5e0!3m2!1sja!2sjp!4v1619151483944!5m2!1sja!2sjp" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <section class="footer-wrapper">
+          <div class="sns-wrapper">
+            <ul>
+              <li><a href="#">instagram</a></li>
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">facebook</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>
+              <small>© Furniture Design</small>
+            </p>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/245704263b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".menuBtn").on("click", function(){
+            // ハンバーガーメニューの位置を設定
+            var rightVal = 0;
+            if($(this).hasClass("open")) {
+                // 位置を移動させメニューを開いた状態にする
+                rightVal = -1700;
+                // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+                $(this).removeClass("open");
+            } else {
+                // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+                $(this).addClass("open");
+            }
+
+            $("#menu").stop().animate({
+                right: rightVal
+            }, 700);
+        });
+      });
+    </script>
+  </body>
+</html>
