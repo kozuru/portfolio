@@ -1,4 +1,4 @@
-@media all and (min-width:781px){
+media all and (min-width:781px){
   header table{display:none;}
 }
 @media all and (max-width:780px){
@@ -6,36 +6,20 @@
   /********/
   /*header*/
   /********/
-  .header-wrapper{
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height:80px;
-    line-height:80px;
-  }
   .header-left{
-    background:rgba(255,255,255,0);
-    z-index:10;
-    display:flex;
-    flex-wrap: wrap;
-    padding-left:220px;
+    padding-left:10px;
   }
-  .header-left{padding-left:10px;}
-  .logo{font-size:30px;letter-spacing:4px;margin-top:-20px;}
+  .logo{font-size:30px;letter-spacing:4px;}
   .menu{display:none;}
-  .header-right .contact-form{
-   padding:0 40px;
-   display:block;
-   color:#000;
-   background:#fff;
-  }
   header table td{
     width:50%;
     text-align: center;
     border:1px solid #1d1d1d;
   }
-  header table a{padding:10px 0;display:block;}
+  header table a{
+    padding:10px 0;
+    display:block;
+  }
 
   /*ここまで*/
   /*****/
