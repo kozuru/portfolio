@@ -1,0 +1,101 @@
+@media all and (min-width:781px){
+  header table{display:none;}
+}
+@media all and (max-width:780px){
+  .container{padding:0 10px;}
+  /********/
+  /*header*/
+  /********/
+  .header-left{
+    padding-left:10px;
+  }
+  .logo{font-size:30px;letter-spacing:4px;}
+  .menu{display:none;}
+  header table td{
+    width:50%;
+    text-align: center;
+    border:1px solid #1d1d1d;
+  }
+  header table a{
+    padding:10px 0;
+    display:block;
+  }
+
+  /*ここまで*/
+  /*****/
+  /*top*/
+  /*****/
+  .slider{margin-top:20px;}
+  /*ここまで*/
+  /******/
+  /*news*/
+  /******/
+  .news-wrapper{
+    height:220px;
+    display:block;
+    overflow-x:hidden;
+    overflow-y: scroll;
+  }
+  .news-content{
+    width:100%;
+    padding:10px 20px 10px 20px;
+  }
+  /*ここまで*/
+  /*******/
+  /*about*/
+  /*******/
+  .heading{
+    font-size:34px; 
+    padding-left:10px;
+  }
+  .sub-heading{
+    padding-left:10px;
+  }
+  .sub-heading::after{
+    content:'';
+    display: inline-block;
+    position:absolute;
+    bottom:0;
+    left:20px;
+    width:40px;
+    height:1px;
+    background:#333;
+  }
+  .about-wrapper{display:block;}
+  .about-photo{width:100%;}
+  .about-content{width:100%;padding:80px 0px 0;}
+  /*ここまで*/
+  /**********/
+  /*business*/
+  /*++++++++*/
+  .business-wrapper{display:block;}
+  .business-left,.business-right{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .business-left{
+    padding-top:40px;
+    justify-content: flex-start;
+  }
+  .business-right{
+    padding-top:40px;
+    justify-content: flex-start;
+  }
+  /*ここまで*/
+  /*********/
+  /*company*/
+  /*********/
+  .company-wrapper{display:block;overflow: hidden;}
+  .company-left{
+    width:100%;
+    padding:60px 40px;
+  }
+  .company-right{width:100%;}
+  .company-right img{
+    width:100%;
+    margin-top:20%;
+    margin-left:0%;
+  }
+  /*ここまで*/
+}
