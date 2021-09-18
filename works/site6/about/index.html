@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="ワッゼド,ホームページ制作,ウェブサービス" />
+    <meta name="description" content="鹿児島の株式会社ワッゼドは、中小零細企業の味方です。Web制作・自社サイト構築をお手伝いします。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>コーディング|家具ウェブサイト・about</title>
+    <link rel="canonical" href="https://wazzedo.hippy.jp/business/hp/site6/about/" />
+    <link rel="icon" href="../../../imgs/favicon/favicon-b.png" data-alt="imgs/favicon/favicon-a.png">
+    <link rel="apple-touch-icon" href="../../../imgs/favicon/apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="../../../imgs/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="stylesheet" href="../../../../css/reset-min.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="../../../css/furniture_common-min.css" type="text/css" media="all"/>
+    <meta name="google-site-verification" content="XvPiLm4HHB8latpnyDmiV1HjOLk2YdE1Uh0alHo_Jdw" />
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="https://wazzedo.hippy.jp/business/hp/site6/"><img  src="../../../imgs/image/siteimage5/furniturelogo.svg" alt="" title="コーディング|家具ウェブサイト・about"/></a><span class="catch">Furniture&nbsp;design</span></h1>
+
+          <input type="checkbox" id="menu-btn-check" name="menu-btn-check"/>
+          <label for="menu-btn-check" class="menuBtn"><span></span><span></span></label>
+          <nav id="menu">
+            <ul>
+              <li><a href="https://wazzedo.hippy.jp/business/hp/site6/products/products1.html">products</a></li>
+              <li><a href="https://wazzedo.hippy.jp/business/hp/site6/about/">about</a></li>
+              <li><a href="https://wazzedo.hippy.jp/business/hp/site6/company/">company</a></li>
+              <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="mask"></div>
+    </header>
+
+    <section class="main about-main">
+      <div class="container">
+        <h1>About</h1>
+        <div class="about-wrapper wrapper">
+
+          <div class="window"><img src="../../../imgs/image/siteimage5/profile.jpg" alt="代表の写真" width="130" height="130"/></div>
+
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="sns-wrapper">
+            <ul>
+              <li><a href="#">instagram</a></li>
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">facebook</a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>
+              <small>© Furniture Design</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/245704263b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".menuBtn").on("click", function(){
+            // ハンバーガーメニューの位置を設定
+            var rightVal = 0;
+            if($(this).hasClass("open")) {
+                // 位置を移動させメニューを開いた状態にする
+                rightVal = -1700;
+                // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+                $(this).removeClass("open");
+            } else {
+                // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+                $(this).addClass("open");
+            }
+
+            $("#menu").stop().animate({
+                right: rightVal
+            }, 700);
+        });
+      });
+    </script>
+
+  </body>
+</html>
