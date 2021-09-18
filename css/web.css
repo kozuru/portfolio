@@ -1,8 +1,14 @@
 *,
 *:before,
-*:after {box-sizing: inherit;}
+*:after {
+  box-sizing: inherit;
+}
 html {box-sizing: border-box;}
-html{overflow-x: hidden;overflow-y: scroll;-webkit-overflow-scrolling: touch;}
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 body {
   -webkit-text-size-adjust: 100%;
 	margin: 0;
@@ -33,14 +39,12 @@ header{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height:60px;
-  line-height:60px;
+  height:80px;
+  line-height:80px;
 }
 .header-left{
   background:rgba(255,255,255,0.6);
   z-index:10;
-  height:60px;
-  line-height:60px;	
   display:flex;
   flex-wrap: wrap;
   padding-left:220px;
