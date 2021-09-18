@@ -15,20 +15,20 @@
     line-height:80px;
   }
   .header-left{
-    background:rgba(255,255,255,0.6);
+    background:rgba(255,255,255,0);
     z-index:10;
     display:flex;
     flex-wrap: wrap;
     padding-left:220px;
   }
   .header-left{padding-left:10px;}
-  .logo{font-size:30px;letter-spacing:4px;}
+  .logo{font-size:30px;letter-spacing:4px;margin-top:-20px;}
   .menu{display:none;}
   .header-right .contact-form{
    padding:0 40px;
    display:block;
-   color:#fff;
-   background:#000;
+   color:#000;
+   background:#fff;
   }
   header table td{
     width:50%;
