@@ -915,8 +915,8 @@ section{width:100%;padding-top:100px;background: white;}
 
 @media (max-width: 480px){
   .image-rate{
-    width: calc(50% - 5px);
-    height: calc(50vw - 5px);
+    width: calc(100% - 5px);
+    height: calc(100vw - 5px);
   }
 }
 
