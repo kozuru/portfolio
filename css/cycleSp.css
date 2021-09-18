@@ -1,0 +1,62 @@
+@media all and (max-width:1400px){
+  .logo{margin-top:-50px;}
+}
+@media all and (max-width:1070px){
+  header{padding:0 6%;}
+  .logo{margin-top:-40px;}
+  .header-menu ul{margin-right:-10px;}
+  .top-wrapper h1{padding:0 10px;font-size:42px;}
+  .first{padding-top:20%;padding-bottom:20%;}
+  .second{padding-top:20%;padding-bottom:20%;background-size:100% auto;}
+  .container{padding:0 15px;}
+  .bicycle-wrapper .container{margin:0 auto;padding:0 10px;}
+  .box{padding:0 300px;}
+}
+@media all and (max-width:770px){
+  header{z-index:99;}
+  .logo{margin-top:-30px;}
+  .top-wrapper h1{font-size:38px;}
+  .box{padding:0 160px;}
+}
+@media all and (max-width:650px){
+  header{padding:0 10px;}
+  .logo{width:30%;line-height:60px;margin-top:-80px; }
+  .top-wrapper{padding-top:-80px;}
+  .profile-view{margin-bottom:20px;}
+  .profile-content{display:block;}
+  .about-wrapper{padding-bottom:40px;}
+  .heading{font-size:3.6rem;}
+  .profile-text{padding:10px 5px 0;max-width:400px;width:100%;}
+  .bicycle-contents{display:block;margin:0 auto 100px}
+  .bicycle-content{width:100%;text-align: center;}
+  .box{padding:0 120px;}
+}
+@media all and (max-width:430px){
+  header{padding:0 0px;}
+  .logo{width:34%;margin-top:-50px;}
+  #header-menu ul{margin-top:0px;}
+  #header-menu li a{padding:10px;font-size:0.875em;}
+  .top-wrapper{padding-top:-100px;}
+  .top-wrapper h1{font-size:24px;}
+  .top-wrapper h3{font-size:18px;}
+  .first{background-image: url('../imgs/image/siteimage7/mainvisual11.webp');}
+  .second{background-image: url('../imgs/image/siteimage7/second1.webp');}
+  .flow-text {margin: -50px auto;heigh:150px;}
+  .text-inline {font-size:15vw;}
+  .box{padding:0px;}
+  .share{padding:30px 20px;}
+}
+@media all and (max-width:365px){
+  .logo{margin-top:-45px;}
+  .top-wrapper h1{font-size:20px;}
+  .top-wrapper h3{font-size:14px;}
+}
+@media all and (max-width:330px){
+  .logo{margin-top:-36px;}
+  .first,.second{background-size:auto 70%;}
+}
+@media all and (max-width:290px){
+  header{padding:0 -5px;}
+  .logo{margin-top:-28px;}
+  #header-menu li a{padding:10px 5px;font-size:0.845em;}
+}
