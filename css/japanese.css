@@ -861,8 +861,8 @@ section{width:100%;padding-top:100px;background: white;}
   min-width: 100%;
   max-width: 100%;
   object-fit: cover;
-  padding-left:1px;
-  padding-bottom:1px;
+  /*padding-left:1px;
+  padding-bottom:1px;*/
 }
 /*
 .image-rate:after{
