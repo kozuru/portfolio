@@ -1,14 +1,8 @@
 *,
 *:before,
-*:after {
-  box-sizing: inherit;
-}
+*:after {box-sizing: inherit;}
 html {box-sizing: border-box;}
-html{
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
+html{overflow-x: hidden;overflow-y: scroll;-webkit-overflow-scrolling: touch;}
 body {
   -webkit-text-size-adjust: 100%;
 	margin: 0;
@@ -45,6 +39,8 @@ header{
 .header-left{
   background:rgba(255,255,255,0.6);
   z-index:10;
+  height:60px;
+  line-height:60px;	
   display:flex;
   flex-wrap: wrap;
   padding-left:220px;
@@ -54,7 +50,7 @@ header{
 .menu li{padding:0 20px;}
 .header-right{display: flex;z-index:10;}
 .header-right .contact-form{
-  padding:0 20px;
+  padding:0 40px;
   display:block;
   color:#fff;
   background:#000;
