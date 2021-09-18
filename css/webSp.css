@@ -6,6 +6,21 @@
   /********/
   /*header*/
   /********/
+  .header-wrapper{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height:80px;
+    line-height:80px;
+  }
+  .header-left{
+    background:rgba(255,255,255,0.6);
+    z-index:10;
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:220px;
+  }
   .header-left{
     padding-left:10px;
   }
