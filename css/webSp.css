@@ -21,20 +21,21 @@
     flex-wrap: wrap;
     padding-left:220px;
   }
-  .header-left{
-    padding-left:10px;
-  }
+  .header-left{padding-left:10px;}
   .logo{font-size:30px;letter-spacing:4px;}
   .menu{display:none;}
+  .header-right .contact-form{
+   padding:0 40px;
+   display:block;
+   color:#fff;
+   background:#000;
+  }
   header table td{
     width:50%;
     text-align: center;
     border:1px solid #1d1d1d;
   }
-  header table a{
-    padding:10px 0;
-    display:block;
-  }
+  header table a{padding:10px 0;display:block;}
 
   /*ここまで*/
   /*****/
