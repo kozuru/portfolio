@@ -303,6 +303,36 @@ li{list-style: none;}
 		transform: scale(.95,1.05);
 	}
 }
+/*******************/
+/*パンくずリストcss*/
+/*******************/
+.breadcrumb {
+	display:inline-block;
+	position:absolute;
+	top:7.0%;
+	left:0.2%;
+	padding:0;
+	list-style: none;
+	z-index:999;
+	width:100%;
+	overflow-x: hidden;
+}
+.breadcrumb li {display: inline-block;list-style: none;font-weight: 300;}
+.breadcrumb li:after {font-family: FontAwesome;content: '\03e';padding: 0 0.3em;color: #edd;}
+.breadcrumb li:last-child:after {content: '';}
+.breadcrumb li a {
+	display: inline-block;
+	padding: 0.2em 0.8em;
+	border-radius: 15px;
+	text-decoration: none;
+	color: #edd;
+	font-family: Cormorant, serif;
+	font-size: 0.9em;
+	font-weight:200;
+}
+.breadcrumb li a:hover {font-weight:800;}
+/*ここまで*/
+
 .header-right{
   width:50%;
 }
@@ -452,7 +482,7 @@ input[type="checkbox"]{
 	display: block;
   position: absolute;
   top: 40vh;
-  left: -38%;
+  left: -39%;
 	font-family:'Arapey-Italic';
   font-weight: 300;
   font-size: 136px;
@@ -536,5 +566,7 @@ input[type="checkbox"]{
   font-size: 14px;
   opacity:0.8;
   padding-left: 10px;
+  white-space: nowrap;
 }
 /*ここまで*/
+
