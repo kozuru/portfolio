@@ -3,9 +3,9 @@
     padding-right:40px;
   }
   .rotating-text {
-    top: 36vh;
-    left: -20%;
-    font-size: 120px;
+    top: 38.5vh;
+    left: -18%;
+    font-size: 115px;
   }
   .message-wrapper{
     padding-top:14vh;
@@ -18,13 +18,39 @@
   .header-text li h2{
     font-size: 3.825em;
   }
+  .breadcrumb {top:10.0%;left:0.2%;}
+  .breadcrumb li a {font-size: 0.9em;}
 }
-@media all and (max-width:1070px){
-
+@media (orientation:portraito) and (max-width:1070px){
+  .breadcrumb {top:5.0%;left:0.2%;}
   .rotating-text {
-    top: 65vh;
+    top: 75vh;
     left: -24%;
     font-size: 138px;
+  }
+}
+@media (orientation:landscape) and (max-width:1070px){
+  .header-text li{width:60vw;}
+  .breadcrumb {top:8.0%;left:0.2%;}
+  .rotating-text {
+    top: 67vh;
+    left: -32%;
+    font-size: 138px;
+  }
+}
+@media all and (max-width:840px){
+  .breadcrumb {top:11.0%;left:0.2%;}
+  .rotating-text {
+    top: 60vh;
+    left: 18%;
+    font-size: 78px;
+  }
+  .header-text li{
+    height:67px;
+    line-height: 67px;
+  }
+  .header-text li h2{
+    font-size: 3.025em;
   }
 }
 @media all and (max-width:780px){
@@ -126,6 +152,7 @@
     left: 17%;
     font-size: 108px;
   }
+  .breadcrumb {top:10.0%;left:0.2%;}
   /*ここまで*/
   /*---------------*/
   /*message-wrapper*/
@@ -161,7 +188,7 @@
     text-align: center;
   }
   .animate span:nth-last-of-type(-n+13){
-    font-size:14px;
+    font-size:16px;
     font-family:'Arapey-Italic';
     font-weight: 300;
     padding-top: 10px;
@@ -299,8 +326,8 @@
     margin-top:-11px;
   }
   .rotating-text {
-    left: 13%;
-    font-size: 88px;
+    left: 40%;
+    font-size: 74px;
   }
 }
 @media all and (max-width:545px){
@@ -320,6 +347,9 @@
     left: 20%;
     font-size: 74px;
   }
+  .header-text li h2{font-size: 2.725em;font-weight: 300;}
+  .breadcrumb {top:7.0%;left:0.2%;}
+  .breadcrumb li a {font-size:12px;}
   .wisteria {
   	padding-left:75px;
   }
@@ -334,12 +364,12 @@
     font-size: 59px;
   }
   .nav-link{
-    font-size:16px;
+    font-size:18px;
   }
 }
 @media all and (max-width:380px){
   .logo{font-size: 1.225em;}
-  .header-text li h2{font-size: 2.725em;}
+  .header-text li h2{font-size: 2.325em;font-weight: 200;}
   .header-text li{
     height:70px;
     line-height: 70px;
@@ -351,7 +381,7 @@
   }
 }
 @media all and (max-width:330px){
-  .header-text li h2{font-size: 2.425em;}
+  .header-text li h2{font-size: 1.925em;}
   .header-text li span{font-size: 10px;}
   .header-text li{height:65px;line-height: 65px;}
   .nav-list {padding-left:20%;}
@@ -363,7 +393,7 @@
   }
 }
 @media all and (max-width:290px){
-  .header-text li h2{font-size: 2.225em;}
+  .header-text li h2{font-size: 1.725em;}
   .nav-list {padding-left:18%;}
   .navBar{right:16px;}
   .rotating-text {
