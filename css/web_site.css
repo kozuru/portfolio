@@ -519,7 +519,7 @@ input[type="checkbox"]{
   height:90px;
   line-height: 90px;
 }
-.header-text li p{
+.header-text li h2{
   color:#fff;
   position:absolute;
   top:0;
@@ -528,7 +528,7 @@ input[type="checkbox"]{
   font-size: 4.925em;
   font-weight: 900;
 }
-.header-text li p:hover{
+.header-text li h2:hover{
   font-weight: 100;
 }
 .header-text li span{
